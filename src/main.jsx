@@ -4,6 +4,7 @@ import "./style.css"
 import App from './App.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import { BrowserRouter } from "react-router";
 import UserProvider from './pages/auth/Context.jsx'
 import { store } from './components/rtk/store.jsx'
