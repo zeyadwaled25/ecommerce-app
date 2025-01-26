@@ -109,7 +109,7 @@ export default function Login() {
           }
         </div>
         <button className="btn btn-success m-auto mt-3" type="submit" style={{width: 75}}>Login</button>
-        <p className="text-center m-0 mt-3">Don&apos;t have an account? <Link to={"/signup"} style={{color: 'darkcyan', fontWeight: '600', fontSize: '18px'}}>Register</Link></p>
+        <p className="text-center m-0 mt-3 not-an-account">Don&apos;t have an account? <Link to={"/signup"}>Register</Link></p>
       </form>
     </div>
   )
