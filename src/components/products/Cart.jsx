@@ -31,7 +31,7 @@ export default function Cart() {
             if (result.isConfirmed) {
               Swal.fire({
                 title: "Deleted!",
-                text: "Your Cart has been deleted.",
+                text: "Your Cart has been Cleared.",
                 icon: "success"
               });
               dispatch(clearCart())
