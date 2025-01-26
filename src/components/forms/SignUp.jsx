@@ -78,17 +78,13 @@ export default function SignUp() {
           value={dataForm.email}
           onChange={(e) => {setDataForm({...dataForm, email: e.target.value})}}
           />
-          {dataForm.email != ''
-            ?
-            regexEmail.test(dataForm.email) && flag ? (
-              emailError === 422 ? (
+          {dataForm.email
+          ? !regexEmail.test(dataForm.email)
+            ? <p className="error-validation">Invalid Email Format</p>
+            : flag && emailError === 422 && (
                 <p className="error-validation">Email Already Exists</p>
-              ) : (
-                null
               )
-            ) : <p className="error-validation">Invalid Email Format</p>
-            :
-            flag && <p className="error-validation">Email is Required</p>
+          : flag && <p className="error-validation">Email is Required</p>
           }
         </div>
         <div className="password position-relative">
