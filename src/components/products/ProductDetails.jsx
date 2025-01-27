@@ -93,8 +93,8 @@ export default function ProductDetails() {
                   />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">{relatedProduct.title}</h5>
-                  <p className="card-text">{`${relatedProduct.description.slice(0, 100)}...`}</p>
+                  <h5 className="card-title">{`${relatedProduct.title.slice(0, 20)}...`}</h5>
+                  <p className="card-text">{`${relatedProduct.description.slice(0, 75)}...`}</p>
                   <div className="buttons d-flex justify-content-between">
                     <Link to={`/product/${relatedProduct.id}`} className="details btn btn-primary"
                       onClick={() => {
